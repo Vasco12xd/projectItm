@@ -1,0 +1,116 @@
+.k-button-primary{
+    & button{
+        display: inline-flex;
+        height: 38px;
+        width: 110px;
+        padding: 14px 30px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 22px;
+        background: #0A76A6;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        font-family: Proxima Nova;
+        font-size: 16px !important; 
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.48px;
+        font: normal 600 16px/20px Proxima Nova !important;
+        &.cards-button{
+            width: 124px !important;
+            padding: 0 !important;
+            height: 36px !important;
+        }
+        &:hover{
+            background: #012E57;
+        }
+        &:focus{
+            background-color: #002F87;
+        }
+        &.move-bottom{
+            margin: 35px 0 0 15px;
+            background: #012E57
+        }
+        &.move-bottom:hover{
+            background: white;
+            color: #008767;
+        }
+    }
+    & img{
+        width: 24px;
+        height: 24px;
+        
+    } 
+    &--disabled{
+        background-color: #EEEEEE !important;
+        color: #B4B4B4 !important;
+        cursor: auto !important;
+    }
+}
+
+/* .k-button-form{
+    background: #012E57!important;
+    width: 110px!important;
+    &:hover{
+        background: white!important;
+        color: #008767;
+    }
+    &.move-bottom{
+        margin: 35px 0 0 15px;
+        
+    }
+} */
+
+.k-button-form-details{
+    display: flex;
+    background: #008767!important;
+    width: 220px!important;
+    padding: 0!important;
+    &:hover{
+        background: white;
+        color: #012E57;
+    }
+    &.move-bottom{
+        margin: 35px 0 0 15px;
+        
+    }
+}
+
+.second-button{
+    width: 200px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .k-button-primary{
+        align-self: center;
+        &.move-bottom{
+            align-items: center;
+            margin: 40px 0 0 0;
+            height: 47px;
+            width: 150px!important;
+            & img {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .k-button-primary{
+        & button{
+            width: 114px;
+            height: 38px;
+            gap: 0;
+        }
+        &.move-bottom{
+            align-items: center;
+            margin: 20px 0 0 0!important;
+        }
+    }
+    
+}

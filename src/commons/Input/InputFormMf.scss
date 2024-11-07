@@ -1,0 +1,95 @@
+@import url('../../App.css');
+
+.k-input{
+    text-align: justify;
+    & input{
+        height: 48px;
+        width: 174px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #D9E0E6;
+        background: #FFF;
+        margin-top: 4px;
+        padding: 0px 0px 0px 16px;
+        color: #212121;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &::placeholder{
+            color:#757575;
+        }
+        &:focus{
+            outline: 1px solid #000;
+        }
+        &:focus-visible{
+            outline: 1px solid #000;
+        }
+    }
+    
+    & label{
+        font: var(--keralty-font-style-normal) normal var(--keralty-font-weight-bold) 18px/25px var(--keralty-font-family-proxima-nova);
+        letter-spacing: var(--keralty-character-spacing-0);
+        color: var(--keralty-color-ffffff);
+        text-align: left;
+        font: normal normal bold 18px/25px Proxima Nova;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        & span{
+            color: #BE0020;
+            font-weight: 900;
+        }
+    }
+    & img{
+        position: absolute;
+        margin: 39px 10px 10px 12px;
+    }
+    &__img-dark{
+        filter: grayscale(100%) contrast(100%) brightness(2) invert(85%);
+    }
+}
+
+.k-input-name{
+    width: 281px!important;
+}
+
+.k-input-name,
+.k-input-cod-cups,
+.k-input-cod-laboratory{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.k-input-name::-webkit-calendar-picker-indicator,
+.k-input-cod-cups::-webkit-calendar-picker-indicator,
+.k-input-cod-laboratory::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+    opacity: 0 !important;
+}
+
+.k-input-name:hover::-webkit-calendar-picker-indicator,
+.k-input-name:focus::-webkit-calendar-picker-indicator,
+.k-input-cod-cups:hover::-webkit-calendar-picker-indicator,
+.k-input-cod-cups:focus::-webkit-calendar-picker-indicator,
+.k-input-cod-laboratory:hover::-webkit-calendar-picker-indicator,
+.k-input-cod-laboratory:focus::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+    opacity: 0 !important;
+}
+
+
+@media screen and (max-width: 1366px) {
+    
+    .k-input-cod-laboratory{
+        width: 172px!important;
+    }
+    .k-input-name{
+        width: 295px!important;
+    }
+    
+}
