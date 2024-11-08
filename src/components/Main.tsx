@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import './scss/Main.scss'; // Asegúrate de crear este archivo para los estilos
 
 interface CarouselProps {
-  images: { src: string; alt: string; text: string }[];
+  images: { src: string; alt: string; text: string }[
+    
+  ];
 }
 
 const Main: React.FC<CarouselProps> = ({ images }) => {

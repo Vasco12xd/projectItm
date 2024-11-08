@@ -12,12 +12,12 @@ const Navbar: React.FC = () => {
     {
       label: 'Ordenar',
       icon: 'pi pi-fw pi-list',
-      command: () => { window.location.href = '/ordenar'; }
+      command: () => { window.location.href = '/order'; }
     },
     {
       label: 'Carrito',
       icon: 'pi pi-fw pi-shopping-cart',
-      command: () => { window.location.href = '/carrito'; }
+      command: () => { window.location.href = '/cart'; }
     },
     {
       label: 'Mi perfil',

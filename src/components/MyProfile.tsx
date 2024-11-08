@@ -1,6 +1,7 @@
 import React from "react";
 import '../components/scss/MyProfile.scss';
 import { Button } from 'primereact/button';
+import Navbar from './navBar';
 
 const Profile: React.FC = () => {
     const username = "Nombre de Usuario"; // Puedes reemplazar esto con el nombre real del usuario
@@ -15,6 +16,7 @@ const Profile: React.FC = () => {
           <Button label="Historial de Pedidos" icon="pi pi-list" className="p-button-warning" />
           <Button label="Mis Direcciones" icon="pi pi-map" className="p-button-success" />
         </div>
+        <Navbar />
       </div>
     );
   };
